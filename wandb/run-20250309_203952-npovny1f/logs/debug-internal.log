@@ -1,0 +1,15 @@
+{"time":"2025-03-09T20:39:52.748263-07:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/xigehao/agent_trainer/wandb/run-20250309_203952-npovny1f/logs/debug-core.log"}
+{"time":"2025-03-09T20:39:52.855954-07:00","level":"INFO","msg":"created new stream","id":"npovny1f"}
+{"time":"2025-03-09T20:39:52.855998-07:00","level":"INFO","msg":"stream: started","id":"npovny1f"}
+{"time":"2025-03-09T20:39:52.856179-07:00","level":"INFO","msg":"handler: started","stream_id":"npovny1f"}
+{"time":"2025-03-09T20:39:52.856223-07:00","level":"INFO","msg":"sender: started","stream_id":"npovny1f"}
+{"time":"2025-03-09T20:39:52.856214-07:00","level":"INFO","msg":"writer: Do: started","stream_id":"npovny1f"}
+{"time":"2025-03-09T20:39:53.054164-07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T20:39:54.270238-07:00","level":"INFO","msg":"stream: closing","id":"npovny1f"}
+{"time":"2025-03-09T20:39:54.270495-07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T20:39:54.271745-07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T20:39:54.658685-07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T20:39:54.774766-07:00","level":"INFO","msg":"sender: closed","stream_id":"npovny1f"}
+{"time":"2025-03-09T20:39:54.774775-07:00","level":"INFO","msg":"handler: closed","stream_id":"npovny1f"}
+{"time":"2025-03-09T20:39:54.774758-07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"npovny1f"}
+{"time":"2025-03-09T20:39:54.774994-07:00","level":"INFO","msg":"stream: closed","id":"npovny1f"}

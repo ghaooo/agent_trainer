@@ -1,0 +1,54 @@
+Training DQN Agent:   0%|                                            | 0/200 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/xigehao/agent_trainer/playground/training_demo.py", line 119, in <module>
+    agent, stats, results = run_quick_training(episodes=training_episodes)
+                            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/playground/training_demo.py", line 85, in run_quick_training
+    agent, stats = train_dqn_agent(
+                   ~~~~~~~~~~~~~~~^
+        env_config=config,
+        ^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        model_dir=model_dir
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/xigehao/agent_trainer/business_simulator/train_and_evaluate.py", line 172, in train_dqn_agent
+    eval_results = run_simulation(eval_env, agent, episodes=5, render=False)
+  File "/Users/xigehao/agent_trainer/business_simulator/simulation.py", line 32, in run_simulation
+    action = agent.act(observation)
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 196, in act
+    discrete_action = self.choose_discrete_action(state_tensor)
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 166, in choose_discrete_action
+    act_values = self.model(state_tensor)
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 35, in forward
+    x = self.relu(self.batch_norm1(self.fc1(x)))
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/batchnorm.py", line 193, in forward
+    return F.batch_norm(
+           ~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<9 lines>...
+        self.eps,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/functional.py", line 2820, in batch_norm
+    _verify_batch_size(input.size())
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/functional.py", line 2786, in _verify_batch_size
+    raise ValueError(
+        f"Expected more than 1 value per channel when training, got input size {size}"
+    )
+ValueError: Expected more than 1 value per channel when training, got input size torch.Size([1, 128])

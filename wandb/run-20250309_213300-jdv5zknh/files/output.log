@@ -1,0 +1,58 @@
+Training DQN Agent:   0%|                                            | 0/200 [00:00<?, ?it/s]2025-03-09 21:33:01,475 - model_store - INFO - Registered model class: DQNetwork
+
+Evaluation at episode 0:
+  DQN Agent: Reward=-235389.84, Cash=-7789.84
+  Random Agent: Reward=-227912.91
+  Heuristic Agent: Reward=-271330.16
+2025-03-09 21:33:01,482 - model_store - INFO - Saved model ./dqn_model_episode_0 version v1 to ./models/./dqn_model_episode_0/v1
+Training DQN Agent:  25%|████████▊                          | 50/200 [00:01<00:06, 24.82it/s]2025-03-09 21:33:03,667 - model_store - INFO - Registered model class: DQNetwork
+
+Evaluation at episode 25:
+  DQN Agent: Reward=-141884.66, Cash=-8684.66
+  Random Agent: Reward=-210401.75
+  Heuristic Agent: Reward=-272109.31
+
+Evaluation at episode 50:
+  DQN Agent: Reward=-136662.36, Cash=-12662.36
+  Random Agent: Reward=-216154.75
+  Heuristic Agent: Reward=-266871.62
+2025-03-09 21:33:03,673 - model_store - INFO - Saved model ./dqn_model_episode_50 version v1 to ./models/./dqn_model_episode_50/v1
+Training DQN Agent:  50%|█████████████████▎                 | 99/200 [00:05<00:06, 15.14it/s]2025-03-09 21:33:08,110 - model_store - INFO - Registered model class: DQNetwork
+
+Evaluation at episode 75:
+  DQN Agent: Reward=-131878.68, Cash=-5478.68
+  Random Agent: Reward=-209435.80
+  Heuristic Agent: Reward=-259157.32
+
+Evaluation at episode 100:
+  DQN Agent: Reward=-116061.98, Cash=-2461.98
+  Random Agent: Reward=-181792.47
+  Heuristic Agent: Reward=-273705.46
+2025-03-09 21:33:08,119 - model_store - INFO - Saved model ./dqn_model_episode_100 version v1 to ./models/./dqn_model_episode_100/v1
+Training DQN Agent:  75%|█████████████████████████▌        | 150/200 [00:11<00:03, 12.96it/s]2025-03-09 21:33:13,524 - model_store - INFO - Registered model class: DQNetwork
+
+Evaluation at episode 125:
+  DQN Agent: Reward=-126987.94, Cash=-7387.94
+  Random Agent: Reward=-217318.00
+  Heuristic Agent: Reward=-259804.24
+
+Evaluation at episode 150:
+  DQN Agent: Reward=-122796.31, Cash=-4396.31
+  Random Agent: Reward=-211710.12
+  Heuristic Agent: Reward=-261788.58
+2025-03-09 21:33:13,537 - model_store - INFO - Saved model ./dqn_model_episode_150 version v1 to ./models/./dqn_model_episode_150/v1
+Training DQN Agent:  99%|█████████████████████████████████▋| 198/200 [00:16<00:00, 13.95it/s]2025-03-09 21:33:18,360 - model_store - INFO - Registered model class: DQNetwork
+
+Evaluation at episode 175:
+  DQN Agent: Reward=-118532.93, Cash=-2532.93
+  Random Agent: Reward=-145254.67
+  Heuristic Agent: Reward=-264638.88
+
+Evaluation at episode 199:
+  DQN Agent: Reward=-117482.50, Cash=-2682.50
+  Random Agent: Reward=-158650.92
+  Heuristic Agent: Reward=-262990.11
+2025-03-09 21:33:18,376 - model_store - INFO - Saved model ./dqn_model_episode_199 version v1 to ./models/./dqn_model_episode_199/v1
+Training DQN Agent: 100%|██████████████████████████████████| 200/200 [00:17<00:00, 11.76it/s]
+2025-03-09 21:33:18,377 - model_store - INFO - Registered model class: DQNetwork
+2025-03-09 21:33:18,393 - model_store - INFO - Saved model ./dqn_model_final version v1 to ./models/./dqn_model_final/v1

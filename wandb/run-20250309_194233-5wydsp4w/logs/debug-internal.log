@@ -1,0 +1,15 @@
+{"time":"2025-03-09T19:42:33.324891-07:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/xigehao/agent_trainer/wandb/run-20250309_194233-5wydsp4w/logs/debug-core.log"}
+{"time":"2025-03-09T19:42:33.433326-07:00","level":"INFO","msg":"created new stream","id":"5wydsp4w"}
+{"time":"2025-03-09T19:42:33.433374-07:00","level":"INFO","msg":"stream: started","id":"5wydsp4w"}
+{"time":"2025-03-09T19:42:33.433438-07:00","level":"INFO","msg":"writer: Do: started","stream_id":"5wydsp4w"}
+{"time":"2025-03-09T19:42:33.433472-07:00","level":"INFO","msg":"handler: started","stream_id":"5wydsp4w"}
+{"time":"2025-03-09T19:42:33.433595-07:00","level":"INFO","msg":"sender: started","stream_id":"5wydsp4w"}
+{"time":"2025-03-09T19:42:33.680357-07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T19:42:34.881113-07:00","level":"INFO","msg":"stream: closing","id":"5wydsp4w"}
+{"time":"2025-03-09T19:42:34.881402-07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T19:42:34.882499-07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T19:42:35.318221-07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T19:42:35.464442-07:00","level":"INFO","msg":"handler: closed","stream_id":"5wydsp4w"}
+{"time":"2025-03-09T19:42:35.464465-07:00","level":"INFO","msg":"sender: closed","stream_id":"5wydsp4w"}
+{"time":"2025-03-09T19:42:35.464452-07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"5wydsp4w"}
+{"time":"2025-03-09T19:42:35.464634-07:00","level":"INFO","msg":"stream: closed","id":"5wydsp4w"}

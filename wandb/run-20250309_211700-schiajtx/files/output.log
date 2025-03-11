@@ -1,0 +1,59 @@
+Training DQN Agent:   0%|                                            | 0/200 [00:00<?, ?it/s]2025-03-09 21:17:01,556 - model_store - INFO - Registered model class: DQNetwork
+
+Evaluation at episode 0:
+  DQN Agent: Reward=-219951.23, Cash=-6751.23
+  Random Agent: Reward=-180843.28
+  Heuristic Agent: Reward=-254608.98
+2025-03-09 21:17:01,566 - model_store - INFO - Saved model ../models/demo/dqn_model_episode_0 version v3 to ../models/demo/../models/demo/dqn_model_episode_0/v3
+Training DQN Agent:  24%|████████▍                          | 48/200 [00:02<00:08, 17.96it/s]2025-03-09 21:17:04,771 - model_store - INFO - Registered model class: DQNetwork
+
+Evaluation at episode 25:
+  DQN Agent: Reward=-169739.18, Cash=-18139.18
+  Random Agent: Reward=-206995.92
+  Heuristic Agent: Reward=-268284.29
+
+Evaluation at episode 50:
+  DQN Agent: Reward=-141431.81, Cash=-5031.81
+  Random Agent: Reward=-189816.42
+  Heuristic Agent: Reward=-267838.35
+2025-03-09 21:17:04,780 - model_store - INFO - Saved model ../models/demo/dqn_model_episode_50 version v2 to ../models/demo/../models/demo/dqn_model_episode_50/v2
+Training DQN Agent:  33%|███████████▌                       | 66/200 [00:04<00:08, 15.17it/s]
+
+Training interrupted by user. Saving current model...
+2025-03-09 21:17:05,730 - model_store - INFO - Registered model class: DQNetwork
+2025-03-09 21:17:05,735 - model_store - INFO - Saved model ../models/demo/dqn_model_interrupted version v1 to models/../models/demo/dqn_model_interrupted/v1
+Model saved to: ../models/demo/dqn_model_interrupted
+Traceback (most recent call last):
+  File "/Users/xigehao/agent_trainer/playground/training_demo.py", line 100, in <module>
+    agent, stats, results = run_quick_training(episodes=training_episodes)
+                            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/playground/training_demo.py", line 64, in run_quick_training
+    agent, stats = train_dqn_agent(
+                   ~~~~~~~~~~~~~~~^
+        env_config=config,
+        ^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        experiment_name=f'training_demo_{episodes}_episodes'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/xigehao/agent_trainer/business_simulator/train_and_evaluate.py", line 141, in train_dqn_agent
+    agent.learn(state, action, reward, next_state, done)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 283, in learn
+    return self.replay()
+           ~~~~~~~~~~~^^
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 235, in replay
+    current_q_values = self.model(states_tensor).gather(1, actions_tensor.unsqueeze(1)).squeeze(1)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 42, in forward
+    x = self.dropout(x)
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1735, in _wrapped_call_impl
+    def _wrapped_call_impl(self, *args, **kwargs):
+
+KeyboardInterrupt

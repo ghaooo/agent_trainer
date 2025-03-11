@@ -1,0 +1,40 @@
+{
+  "os": "macOS-11.0-arm64-arm-64bit-Mach-O",
+  "python": "CPython 3.13.2",
+  "startedAt": "2025-03-10T03:47:29.297086Z",
+  "program": "/Users/xigehao/agent_trainer/playground/business_advisor_demo.py",
+  "codePath": "playground/business_advisor_demo.py",
+  "email": "haoxige@gmail.com",
+  "root": "/Users/xigehao/agent_trainer",
+  "host": "Xiges-Air.attlocal.net",
+  "executable": "/Users/xigehao/agent_trainer/venv/bin/python3",
+  "codePathLocal": "playground/business_advisor_demo.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "245107195904",
+      "used": "24597807104"
+    },
+    "/System/Volumes/Data": {
+      "total": "245107195904",
+      "used": "180891545600"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 8
+  },
+  "apple": {
+    "name": "Apple M1",
+    "ecpuCores": 4,
+    "pcpuCores": 4,
+    "gpuCores": 7,
+    "memoryGb": 8,
+    "swapTotalBytes": "9663676416",
+    "ramTotalBytes": "8589934592"
+  }
+}

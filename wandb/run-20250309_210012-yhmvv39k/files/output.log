@@ -1,0 +1,46 @@
+Training DQN Agent:  75%|█████████████████████████▌        | 150/200 [00:10<00:03, 13.12it/s]
+
+Evaluation at episode 0:
+  DQN Agent: Reward=-218725.50, Cash=-12325.50
+  Random Agent: Reward=-171083.89
+  Heuristic Agent: Reward=-264430.19
+
+Evaluation at episode 25:
+  DQN Agent: Reward=-158776.20, Cash=-7976.20
+  Random Agent: Reward=-175260.20
+  Heuristic Agent: Reward=-267938.39
+
+Evaluation at episode 50:
+  DQN Agent: Reward=-141500.10, Cash=-5100.10
+  Random Agent: Reward=-207020.09
+  Heuristic Agent: Reward=-261711.51
+
+Evaluation at episode 75:
+  DQN Agent: Reward=-133839.18, Cash=-10639.18
+  Random Agent: Reward=-239313.58
+  Heuristic Agent: Reward=-276014.85
+
+Evaluation at episode 100:
+  DQN Agent: Reward=-119226.52, Cash=-5226.52
+  Random Agent: Reward=-161683.50
+  Heuristic Agent: Reward=-268493.97
+
+Evaluation at episode 125:
+  DQN Agent: Reward=-110535.27, Cash=-2935.27
+  Random Agent: Reward=-300582.31
+  Heuristic Agent: Reward=-254770.39
+
+Evaluation at episode 150:
+  DQN Agent: Reward=-109018.66, Cash=-3018.66
+  Random Agent: Reward=-209570.38
+  Heuristic Agent: Reward=-261800.66
+
+Evaluation at episode 175:
+  DQN Agent: Reward=-115594.61, Cash=-3194.61
+  Random Agent: Reward=-242335.66
+  Heuristic Agent: Reward=-271871.57
+
+Evaluation at episode 199:
+  DQN Agent: Reward=-111639.09, Cash=-2039.09
+  Random Agent: Reward=-267250.56
+  Heuristic Agent: Reward=-267057.50

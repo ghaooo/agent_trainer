@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/Users/xigehao/agent_trainer/playground/business_advisor_demo.py", line 1088, in <module>
+    advisor, results, app, html_file = demo_business_advisor()
+                                       ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/xigehao/agent_trainer/playground/business_advisor_demo.py", line 951, in demo_business_advisor
+    advisor = BusinessAdvisor(model_path=model_path)
+  File "/Users/xigehao/agent_trainer/business_simulator/business_advisor.py", line 32, in __init__
+    self.agent = create_business_decision_agent(model_path, config)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/business_simulator/train_and_evaluate.py", line 400, in create_business_decision_agent
+    agent.load(model_path)
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 322, in load
+    self.model.load_state_dict(checkpoint['model_state_dict'])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 2581, in load_state_dict
+    raise RuntimeError(
+    ...<3 lines>...
+    )
+RuntimeError: Error(s) in loading state_dict for DQNetwork:
+	Missing key(s) in state_dict: "fc4.weight", "fc4.bias", "batch_norm1.weight", "batch_norm1.bias", "batch_norm1.running_mean", "batch_norm1.running_var", "batch_norm2.weight", "batch_norm2.bias", "batch_norm2.running_mean", "batch_norm2.running_var", "batch_norm3.weight", "batch_norm3.bias", "batch_norm3.running_mean", "batch_norm3.running_var".
+	size mismatch for fc1.weight: copying a param with shape torch.Size([64, 6]) from checkpoint, the shape in current model is torch.Size([128, 6]).
+	size mismatch for fc1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for fc2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for fc2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for fc3.weight: copying a param with shape torch.Size([27, 64]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for fc3.bias: copying a param with shape torch.Size([27]) from checkpoint, the shape in current model is torch.Size([128]).

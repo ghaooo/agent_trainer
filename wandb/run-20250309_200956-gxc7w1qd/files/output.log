@@ -1,0 +1,448 @@
+
+DETAILED EVALUATION RESULTS:
+==========================
+
+Scenario: baseline
+Input Parameters:
+  inventory: 2500
+  demand: 4000
+  unit_cost: 65
+  competitor_price: 130
+  market_growth: 0.015
+
+Recommendations:
+  Price: $75.00
+  Production: 250 units
+  Marketing Budget: $0.00
+  Expected Profit: $114622.00
+
+Reasoning:
+Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (0.6 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $114622.00 in profit based on the current conditions.
+
+--------------------------------------------------
+
+Scenario: high_demand
+Input Parameters:
+  inventory: 2500
+  demand: 6000
+  unit_cost: 65
+  competitor_price: 130
+  market_growth: 0.03
+
+Recommendations:
+  Price: $75.00
+  Production: 250 units
+  Marketing Budget: $0.00
+  Expected Profit: $183020.00
+
+Reasoning:
+Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (0.4 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $183020.00 in profit based on the current conditions.
+
+--------------------------------------------------
+
+Scenario: low_demand
+Input Parameters:
+  inventory: 2500
+  demand: 2000
+  unit_cost: 65
+  competitor_price: 130
+  market_growth: -0.01
+
+Recommendations:
+  Price: $75.00
+  Production: 250 units
+  Marketing Budget: $0.00
+  Expected Profit: $35312.00
+
+Reasoning:
+Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (1.2 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $35312.00 in profit based on the current conditions.
+
+--------------------------------------------------
+
+Scenario: high_competition
+Input Parameters:
+  inventory: 2500
+  demand: 4500
+  unit_cost: 65
+  competitor_price: 95
+  market_growth: 0.015
+
+Recommendations:
+  Price: $75.00
+  Production: 250 units
+  Marketing Budget: $0.00
+  Expected Profit: $180710.00
+
+Reasoning:
+Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (0.6 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $180710.00 in profit based on the current conditions.
+
+--------------------------------------------------
+
+Scenario: cost_pressure
+Input Parameters:
+  inventory: 2500
+  demand: 4000
+  unit_cost: 85
+  competitor_price: 140
+  market_growth: 0.015
+
+Recommendations:
+  Price: $75.00
+  Production: 250 units
+  Marketing Budget: $0.00
+  Expected Profit: $175867.00
+
+Reasoning:
+Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (0.6 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $175867.00 in profit based on the current conditions.
+
+--------------------------------------------------
+
+Scenario: growth_market
+Input Parameters:
+  inventory: 2500
+  demand: 5000
+  unit_cost: 65
+  competitor_price: 130
+  market_growth: 0.05
+
+Recommendations:
+  Price: $75.00
+  Production: 250 units
+  Marketing Budget: $0.00
+  Expected Profit: $146731.00
+
+Reasoning:
+Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (0.5 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $146731.00 in profit based on the current conditions.
+
+--------------------------------------------------
+
+Scenario: recession
+Input Parameters:
+  inventory: 2500
+  demand: 3000
+  unit_cost: 65
+  competitor_price: 110
+  market_growth: -0.03
+
+Recommendations:
+  Price: $75.00
+  Production: 250 units
+  Marketing Budget: $0.00
+  Expected Profit: $103996.00
+
+Reasoning:
+Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (0.8 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $103996.00 in profit based on the current conditions.
+
+--------------------------------------------------
+
+COMPARATIVE ANALYSIS TABLES:
+===========================
+
+DECISION METRICS BY SCENARIO:
+----------------------------------------------------------------------------------------------------
+Scenario                   Price ($)      Production   Marketing ($)      Profit ($)   vs Baseline %
+----------------------------------------------------------------------------------------------------
+baseline                       75.00             250            0.00       114622.00             0.0
+high_demand                    75.00             250            0.00       183020.00            59.7
+low_demand                     75.00             250            0.00        35312.00           -69.2
+high_competition               75.00             250            0.00       180710.00            57.7
+cost_pressure                  75.00             250            0.00       175867.00            53.4
+growth_market                  75.00             250            0.00       146731.00            28.0
+recession                      75.00             250            0.00       103996.00            -9.3
+----------------------------------------------------------------------------------------------------
+
+MARKET CONDITIONS ANALYSIS:
+----------------------------------------------------------------------------------------------------
+Scenario                   Demand   Market Growth    Competitor $    Unit Cost     Price Gap %
+----------------------------------------------------------------------------------------------------
+baseline                     4000            1.5%          130.00        65.00          -42.3%
+high_demand                  6000            3.0%          130.00        65.00          -42.3%
+low_demand                   2000           -1.0%          130.00        65.00          -42.3%
+high_competition             4500            1.5%           95.00        65.00          -21.1%
+cost_pressure                4000            1.5%          140.00        85.00          -46.4%
+growth_market                5000            5.0%          130.00        65.00          -42.3%
+recession                    3000           -3.0%          110.00        65.00          -31.8%
+----------------------------------------------------------------------------------------------------
+
+
+DECISION ANALYSIS AND RATIONALE:
+----------------------------------------------------------------------------------------------------
+Scenario: baseline
+Market Context:
+  - Demand Level: Medium
+  - Market Growth: Stable
+  - Competitive Position: Discount
+
+Key Decision Metrics:
+  - Gross Margin: 13.3%
+  - Inventory Coverage: 0.6 months
+  - Marketing Intensity: 0.0% of cash
+
+Decision Confidence:
+  - Price Setting: Medium
+    * Current Price: $75.00
+    * Competitor Price: $130.00
+    * Price Premium/Discount: -42.3%
+  - Production Planning: Medium
+    * Recommended Production: 250 units
+    * Current Demand: 4000 units
+    * Production vs Demand: 6.2%
+  - Marketing Investment: Medium
+    * Marketing Budget: $0.00
+    * As % of Cash: 0.0%
+
+Strategy Summary:
+  Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (0.6 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $114622.00 in profit based on the current conditions.
+----------------------------------------------------------------------------------------------------
+
+Scenario: high_demand
+Market Context:
+  - Demand Level: High
+  - Market Growth: Expanding
+  - Competitive Position: Discount
+
+Key Decision Metrics:
+  - Gross Margin: 13.3%
+  - Inventory Coverage: 0.4 months
+  - Marketing Intensity: 0.0% of cash
+
+Decision Confidence:
+  - Price Setting: Medium
+    * Current Price: $75.00
+    * Competitor Price: $130.00
+    * Price Premium/Discount: -42.3%
+  - Production Planning: Medium
+    * Recommended Production: 250 units
+    * Current Demand: 6000 units
+    * Production vs Demand: 4.2%
+  - Marketing Investment: Medium
+    * Marketing Budget: $0.00
+    * As % of Cash: 0.0%
+
+Strategy Summary:
+  Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (0.4 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $183020.00 in profit based on the current conditions.
+----------------------------------------------------------------------------------------------------
+
+Scenario: low_demand
+Market Context:
+  - Demand Level: Low
+  - Market Growth: Contracting
+  - Competitive Position: Discount
+
+Key Decision Metrics:
+  - Gross Margin: 13.3%
+  - Inventory Coverage: 1.2 months
+  - Marketing Intensity: 0.0% of cash
+
+Decision Confidence:
+  - Price Setting: Medium
+    * Current Price: $75.00
+    * Competitor Price: $130.00
+    * Price Premium/Discount: -42.3%
+  - Production Planning: Medium
+    * Recommended Production: 250 units
+    * Current Demand: 2000 units
+    * Production vs Demand: 12.5%
+  - Marketing Investment: Medium
+    * Marketing Budget: $0.00
+    * As % of Cash: 0.0%
+
+Strategy Summary:
+  Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (1.2 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $35312.00 in profit based on the current conditions.
+----------------------------------------------------------------------------------------------------
+
+Scenario: high_competition
+Market Context:
+  - Demand Level: High
+  - Market Growth: Stable
+  - Competitive Position: Discount
+
+Key Decision Metrics:
+  - Gross Margin: 13.3%
+  - Inventory Coverage: 0.6 months
+  - Marketing Intensity: 0.0% of cash
+
+Decision Confidence:
+  - Price Setting: Medium
+    * Current Price: $75.00
+    * Competitor Price: $95.00
+    * Price Premium/Discount: -21.1%
+  - Production Planning: Medium
+    * Recommended Production: 250 units
+    * Current Demand: 4500 units
+    * Production vs Demand: 5.6%
+  - Marketing Investment: Medium
+    * Marketing Budget: $0.00
+    * As % of Cash: 0.0%
+
+Strategy Summary:
+  Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (0.6 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $180710.00 in profit based on the current conditions.
+----------------------------------------------------------------------------------------------------
+
+Scenario: cost_pressure
+Market Context:
+  - Demand Level: Medium
+  - Market Growth: Stable
+  - Competitive Position: Discount
+
+Key Decision Metrics:
+  - Gross Margin: -13.3%
+  - Inventory Coverage: 0.6 months
+  - Marketing Intensity: 0.0% of cash
+
+Decision Confidence:
+  - Price Setting: Medium
+    * Current Price: $75.00
+    * Competitor Price: $140.00
+    * Price Premium/Discount: -46.4%
+  - Production Planning: Medium
+    * Recommended Production: 250 units
+    * Current Demand: 4000 units
+    * Production vs Demand: 6.2%
+  - Marketing Investment: Medium
+    * Marketing Budget: $0.00
+    * As % of Cash: 0.0%
+
+Strategy Summary:
+  Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (0.6 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $175867.00 in profit based on the current conditions.
+----------------------------------------------------------------------------------------------------
+
+Scenario: growth_market
+Market Context:
+  - Demand Level: High
+  - Market Growth: Expanding
+  - Competitive Position: Discount
+
+Key Decision Metrics:
+  - Gross Margin: 13.3%
+  - Inventory Coverage: 0.5 months
+  - Marketing Intensity: 0.0% of cash
+
+Decision Confidence:
+  - Price Setting: Medium
+    * Current Price: $75.00
+    * Competitor Price: $130.00
+    * Price Premium/Discount: -42.3%
+  - Production Planning: Medium
+    * Recommended Production: 250 units
+    * Current Demand: 5000 units
+    * Production vs Demand: 5.0%
+  - Marketing Investment: Medium
+    * Marketing Budget: $0.00
+    * As % of Cash: 0.0%
+
+Strategy Summary:
+  Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (0.5 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $146731.00 in profit based on the current conditions.
+----------------------------------------------------------------------------------------------------
+
+Scenario: recession
+Market Context:
+  - Demand Level: Medium
+  - Market Growth: Contracting
+  - Competitive Position: Discount
+
+Key Decision Metrics:
+  - Gross Margin: 13.3%
+  - Inventory Coverage: 0.8 months
+  - Marketing Intensity: 0.0% of cash
+
+Decision Confidence:
+  - Price Setting: Medium
+    * Current Price: $75.00
+    * Competitor Price: $110.00
+    * Price Premium/Discount: -31.8%
+  - Production Planning: Medium
+    * Recommended Production: 250 units
+    * Current Demand: 3000 units
+    * Production vs Demand: 8.3%
+  - Marketing Investment: Medium
+    * Marketing Budget: $0.00
+    * As % of Cash: 0.0%
+
+Strategy Summary:
+  Based on your current business metrics and market conditions, I recommend a competitive pricing strategy with a price of $75.00 per unit. A competitive price will help drive sales volume in the current market.
+
+For production, I recommend producing 250 units. With 2500 units in inventory (0.8 months of demand), limited production is recommended to avoid excess inventory costs.
+
+Allocate $0.00 to marketing efforts. Limited marketing recommended to preserve cash while maintaining minimal market presence.
+
+These recommendations are expected to generate approximately $103996.00 in profit based on the current conditions.
+----------------------------------------------------------------------------------------------------

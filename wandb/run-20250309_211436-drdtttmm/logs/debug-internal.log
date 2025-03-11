@@ -1,0 +1,7 @@
+{"time":"2025-03-09T21:14:36.805667-07:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/xigehao/agent_trainer/wandb/run-20250309_211436-drdtttmm/logs/debug-core.log"}
+{"time":"2025-03-09T21:14:36.914511-07:00","level":"INFO","msg":"created new stream","id":"drdtttmm"}
+{"time":"2025-03-09T21:14:36.914575-07:00","level":"INFO","msg":"stream: started","id":"drdtttmm"}
+{"time":"2025-03-09T21:14:36.914721-07:00","level":"INFO","msg":"handler: started","stream_id":"drdtttmm"}
+{"time":"2025-03-09T21:14:36.915512-07:00","level":"INFO","msg":"writer: Do: started","stream_id":"drdtttmm"}
+{"time":"2025-03-09T21:14:36.916039-07:00","level":"INFO","msg":"sender: started","stream_id":"drdtttmm"}
+{"time":"2025-03-09T21:14:37.198957-07:00","level":"INFO","msg":"Starting system monitor"}

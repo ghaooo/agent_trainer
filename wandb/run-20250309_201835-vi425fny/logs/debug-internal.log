@@ -1,0 +1,15 @@
+{"time":"2025-03-09T20:18:35.06083-07:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/xigehao/agent_trainer/wandb/run-20250309_201835-vi425fny/logs/debug-core.log"}
+{"time":"2025-03-09T20:18:35.174374-07:00","level":"INFO","msg":"created new stream","id":"vi425fny"}
+{"time":"2025-03-09T20:18:35.174434-07:00","level":"INFO","msg":"stream: started","id":"vi425fny"}
+{"time":"2025-03-09T20:18:35.174624-07:00","level":"INFO","msg":"handler: started","stream_id":"vi425fny"}
+{"time":"2025-03-09T20:18:35.174677-07:00","level":"INFO","msg":"writer: Do: started","stream_id":"vi425fny"}
+{"time":"2025-03-09T20:18:35.174715-07:00","level":"INFO","msg":"sender: started","stream_id":"vi425fny"}
+{"time":"2025-03-09T20:18:35.347531-07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T20:18:36.538697-07:00","level":"INFO","msg":"stream: closing","id":"vi425fny"}
+{"time":"2025-03-09T20:18:36.539014-07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T20:18:36.539657-07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T20:18:36.939114-07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T20:18:37.065895-07:00","level":"INFO","msg":"handler: closed","stream_id":"vi425fny"}
+{"time":"2025-03-09T20:18:37.065888-07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vi425fny"}
+{"time":"2025-03-09T20:18:37.065898-07:00","level":"INFO","msg":"sender: closed","stream_id":"vi425fny"}
+{"time":"2025-03-09T20:18:37.066013-07:00","level":"INFO","msg":"stream: closed","id":"vi425fny"}

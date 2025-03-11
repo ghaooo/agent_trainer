@@ -1,0 +1,16 @@
+{"time":"2025-03-09T20:19:19.773183-07:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/xigehao/agent_trainer/wandb/run-20250309_201919-7w9lhtwt/logs/debug-core.log"}
+{"time":"2025-03-09T20:19:20.066451-07:00","level":"INFO","msg":"created new stream","id":"7w9lhtwt"}
+{"time":"2025-03-09T20:19:20.066504-07:00","level":"INFO","msg":"stream: started","id":"7w9lhtwt"}
+{"time":"2025-03-09T20:19:20.066641-07:00","level":"INFO","msg":"handler: started","stream_id":"7w9lhtwt"}
+{"time":"2025-03-09T20:19:20.070004-07:00","level":"INFO","msg":"writer: Do: started","stream_id":"7w9lhtwt"}
+{"time":"2025-03-09T20:19:20.070052-07:00","level":"INFO","msg":"sender: started","stream_id":"7w9lhtwt"}
+{"time":"2025-03-09T20:19:20.490773-07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T20:19:26.383844-07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T20:19:26.384599-07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T20:19:27.387482-07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-7w9lhtwt-strategy_comparison_table","runtime_seconds":1.174555416}],"total_operations":1}}
+{"time":"2025-03-09T20:19:27.440887-07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T20:19:27.605408-07:00","level":"INFO","msg":"stream: closing","id":"7w9lhtwt"}
+{"time":"2025-03-09T20:19:27.60549-07:00","level":"INFO","msg":"sender: closed","stream_id":"7w9lhtwt"}
+{"time":"2025-03-09T20:19:27.605485-07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7w9lhtwt"}
+{"time":"2025-03-09T20:19:27.605669-07:00","level":"INFO","msg":"handler: closed","stream_id":"7w9lhtwt"}
+{"time":"2025-03-09T20:19:27.605719-07:00","level":"INFO","msg":"stream: closed","id":"7w9lhtwt"}

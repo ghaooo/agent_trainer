@@ -1,0 +1,41 @@
+Training DQN Agent:   0%|                                                                                                                                                                                                                                                                                                                          | 0/20 [00:00<?, ?it/s]
+
+Evaluation at episode 0:
+  DQN Agent: Reward=-108108.74, Cash=-3108.74
+  Random Agent: Reward=-164708.80
+  Heuristic Agent: Reward=-270814.82
+Traceback (most recent call last):
+  File "/Users/xigehao/agent_trainer/playground/training_demo.py", line 120, in <module>
+    agent, stats, results = run_quick_training(episodes=training_episodes)
+                            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/playground/training_demo.py", line 73, in run_quick_training
+    agent, stats = train_dqn_agent(
+                   ~~~~~~~~~~~~~~~^
+        env_config=config,
+        ^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        agent=agent  # Pass the pre-loaded agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/xigehao/agent_trainer/business_simulator/train_and_evaluate.py", line 197, in train_dqn_agent
+    agent.save(model_path)
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 275, in save
+    torch.save({
+    ~~~~~~~~~~^^
+        'model_state_dict': self.model.state_dict(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'optimizer_state_dict': self.optimizer.state_dict(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    }, f"{filepath}.pt")
+    ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/serialization.py", line 943, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+         ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/serialization.py", line 810, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/serialization.py", line 781, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name, _compute_crc32))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Parent directory ../models/demo/../models/demo does not exist.

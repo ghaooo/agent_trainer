@@ -1,0 +1,49 @@
+No trained model found at ../models/demo/dqn_model_final. Creating a fresh environment and agent...
+Error: Error(s) in loading state_dict for DQNetwork:
+	size mismatch for fc3.weight: copying a param with shape torch.Size([27, 64]) from checkpoint, the shape in current model is torch.Size([225, 64]).
+	size mismatch for fc3.bias: copying a param with shape torch.Size([27]) from checkpoint, the shape in current model is torch.Size([225]).
+Traceback (most recent call last):
+  File "/Users/xigehao/agent_trainer/playground/business_advisor_demo.py", line 79, in demo_business_advisor
+    advisor = BusinessAdvisor(model_path=model_path)
+  File "/Users/xigehao/agent_trainer/business_simulator/business_advisor.py", line 32, in __init__
+    self.agent = create_business_decision_agent(model_path, config)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/business_simulator/train_and_evaluate.py", line 400, in create_business_decision_agent
+    agent.load(model_path)
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 308, in load
+    self.model.load_state_dict(checkpoint['model_state_dict'])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 2581, in load_state_dict
+    raise RuntimeError(
+    ...<3 lines>...
+    )
+RuntimeError: Error(s) in loading state_dict for DQNetwork:
+	size mismatch for fc3.weight: copying a param with shape torch.Size([27, 64]) from checkpoint, the shape in current model is torch.Size([225, 64]).
+	size mismatch for fc3.bias: copying a param with shape torch.Size([27]) from checkpoint, the shape in current model is torch.Size([225]).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xigehao/agent_trainer/playground/business_advisor_demo.py", line 274, in <module>
+    advisor, results = demo_business_advisor()
+                       ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/xigehao/agent_trainer/playground/business_advisor_demo.py", line 86, in demo_business_advisor
+    advisor = BusinessAdvisor(model_path="../models/demo/dqn_model_fresh")
+  File "/Users/xigehao/agent_trainer/business_simulator/business_advisor.py", line 32, in __init__
+    self.agent = create_business_decision_agent(model_path, config)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/business_simulator/train_and_evaluate.py", line 400, in create_business_decision_agent
+    agent.load(model_path)
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 307, in load
+    checkpoint = torch.load(f"{filepath}.pt", map_location=self.device)
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../models/demo/dqn_model_fresh.pt'

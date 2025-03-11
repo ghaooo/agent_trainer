@@ -1,0 +1,46 @@
+Training DQN Agent: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:00<00:00, 31.66it/s]
+
+Evaluation at episode 0:
+  DQN Agent: Reward=-104201.46, Cash=-2201.46
+  Random Agent: Reward=-167135.16
+  Heuristic Agent: Reward=-269683.50
+
+Evaluation at episode 19:
+  DQN Agent: Reward=-106721.49, Cash=-2721.49
+  Random Agent: Reward=-198122.06
+  Heuristic Agent: Reward=-266973.64
+Traceback (most recent call last):
+  File "/Users/xigehao/agent_trainer/playground/training_demo.py", line 120, in <module>
+    agent, stats, results = run_quick_training(episodes=training_episodes)
+                            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/playground/training_demo.py", line 73, in run_quick_training
+    agent, stats = train_dqn_agent(
+                   ~~~~~~~~~~~~~~~^
+        env_config=config,
+        ^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        agent=agent  # Pass the pre-loaded agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/xigehao/agent_trainer/business_simulator/train_and_evaluate.py", line 202, in train_dqn_agent
+    wandb.save(f"{final_model_path}.pt")
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/wandb/sdk/wandb_run.py", line 401, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/wandb/sdk/wandb_run.py", line 1975, in save
+    return self._save(
+           ~~~~~~~~~~^
+        resolved_glob_path,
+        ^^^^^^^^^^^^^^^^^^^
+        resolved_base_path,
+        ^^^^^^^^^^^^^^^^^^^
+        policy,
+        ^^^^^^^
+    )
+    ^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/wandb/sdk/wandb_run.py", line 1990, in _save
+    raise ValueError("Glob may not walk above the base path")
+ValueError: Glob may not walk above the base path

@@ -1,0 +1,66 @@
+Training DQN Agent:   0%|                                            | 0/200 [00:00<?, ?it/s]2025-03-09 21:14:37,334 - model_store - INFO - Registered model class: DQNetwork
+
+Evaluation at episode 0:
+  DQN Agent: Reward=-135100.11, Cash=-16300.11
+  Random Agent: Reward=-163009.64
+  Heuristic Agent: Reward=-263270.46
+2025-03-09 21:14:37,338 - model_store - INFO - Saved model ../models/demo/dqn_model_episode_0 version v2 to ../models/demo/../models/demo/dqn_model_episode_0/v2
+Training DQN Agent:  20%|██████▊                            | 39/200 [00:01<00:05, 27.59it/s]
+
+Evaluation at episode 25:
+  DQN Agent: Reward=-184441.75, Cash=-6441.75
+  Random Agent: Reward=-247350.80
+  Heuristic Agent: Reward=-268765.24
+Traceback (most recent call last):
+  File "/Users/xigehao/agent_trainer/playground/training_demo.py", line 71, in <module>
+    agent, stats, results = run_quick_training(episodes=training_episodes)
+                            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/playground/training_demo.py", line 47, in run_quick_training
+    agent, stats = train_dqn_agent(
+                   ~~~~~~~~~~~~~~~^
+        env_config=config,
+        ^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        model_dir="../models/demo"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/xigehao/agent_trainer/business_simulator/train_and_evaluate.py", line 141, in train_dqn_agent
+    agent.learn(state, action, reward, next_state, done)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 283, in learn
+    return self.replay()
+           ~~~~~~~~~~~^^
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 244, in replay
+    max_next_q_values = self.target_model(next_states_tensor).gather(1, max_actions.unsqueeze(1)).squeeze(1)
+                        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 40, in forward
+    x = self.dropout(x)
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/dropout.py", line 70, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/functional.py", line 1425, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in atexit callback <function _start_and_connect_service.<locals>.teardown_atexit at 0x127fbaca0>:
+Traceback (most recent call last):
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/wandb/sdk/lib/service_connection.py", line 94, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/wandb/sdk/lib/service_connection.py", line 226, in teardown
+    self._router.join()
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1092, in join
+    self._handle.join(timeout)
+KeyboardInterrupt:

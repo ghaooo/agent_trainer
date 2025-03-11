@@ -1,0 +1,51 @@
+No trained model found at ../models/demo/dqn_model_final. Creating a fresh environment and agent...
+Error: Error(s) in loading state_dict for DQNetwork:
+	size mismatch for fc3.weight: copying a param with shape torch.Size([27, 64]) from checkpoint, the shape in current model is torch.Size([225, 64]).
+	size mismatch for fc3.bias: copying a param with shape torch.Size([27]) from checkpoint, the shape in current model is torch.Size([225]).
+Traceback (most recent call last):
+  File "/Users/xigehao/agent_trainer/playground/business_advisor_demo.py", line 79, in demo_business_advisor
+    advisor = BusinessAdvisor(model_path=model_path)
+  File "/Users/xigehao/agent_trainer/business_simulator/business_advisor.py", line 32, in __init__
+    self.agent = create_business_decision_agent(model_path, config)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/business_simulator/train_and_evaluate.py", line 400, in create_business_decision_agent
+    agent.load(model_path)
+    ~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 307, in load
+    self.model.load_state_dict(checkpoint['model_state_dict'])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 2581, in load_state_dict
+    raise RuntimeError(
+    ...<3 lines>...
+    )
+RuntimeError: Error(s) in loading state_dict for DQNetwork:
+	size mismatch for fc3.weight: copying a param with shape torch.Size([27, 64]) from checkpoint, the shape in current model is torch.Size([225, 64]).
+	size mismatch for fc3.bias: copying a param with shape torch.Size([27]) from checkpoint, the shape in current model is torch.Size([225]).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xigehao/agent_trainer/playground/business_advisor_demo.py", line 285, in <module>
+    advisor, results = demo_business_advisor()
+                       ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/xigehao/agent_trainer/playground/business_advisor_demo.py", line 96, in demo_business_advisor
+    agent.save("../models/demo/dqn_model_fresh")
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/business_simulator/reinforcement_learning_agent.py", line 274, in save
+    torch.save({
+    ~~~~~~~~~~^^
+        'model_state_dict': self.model.state_dict(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'optimizer_state_dict': self.optimizer.state_dict(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    }, f"{filepath}.pt")
+    ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/serialization.py", line 943, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+         ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/serialization.py", line 810, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/Users/xigehao/agent_trainer/venv/lib/python3.13/site-packages/torch/serialization.py", line 781, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name, _compute_crc32))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Parent directory ../models/demo/../models/demo does not exist.

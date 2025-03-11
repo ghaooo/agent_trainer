@@ -1,0 +1,15 @@
+{"time":"2025-03-09T20:17:47.411049-07:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/xigehao/agent_trainer/wandb/run-20250309_201747-mrc5eodg/logs/debug-core.log"}
+{"time":"2025-03-09T20:17:47.531737-07:00","level":"INFO","msg":"created new stream","id":"mrc5eodg"}
+{"time":"2025-03-09T20:17:47.533196-07:00","level":"INFO","msg":"stream: started","id":"mrc5eodg"}
+{"time":"2025-03-09T20:17:47.533423-07:00","level":"INFO","msg":"handler: started","stream_id":"mrc5eodg"}
+{"time":"2025-03-09T20:17:47.535607-07:00","level":"INFO","msg":"writer: Do: started","stream_id":"mrc5eodg"}
+{"time":"2025-03-09T20:17:47.536355-07:00","level":"INFO","msg":"sender: started","stream_id":"mrc5eodg"}
+{"time":"2025-03-09T20:17:47.770679-07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T20:17:50.121628-07:00","level":"INFO","msg":"stream: closing","id":"mrc5eodg"}
+{"time":"2025-03-09T20:17:50.123969-07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T20:17:50.128426-07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T20:17:50.582908-07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T20:17:50.712618-07:00","level":"INFO","msg":"sender: closed","stream_id":"mrc5eodg"}
+{"time":"2025-03-09T20:17:50.712611-07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mrc5eodg"}
+{"time":"2025-03-09T20:17:50.712623-07:00","level":"INFO","msg":"handler: closed","stream_id":"mrc5eodg"}
+{"time":"2025-03-09T20:17:50.712712-07:00","level":"INFO","msg":"stream: closed","id":"mrc5eodg"}

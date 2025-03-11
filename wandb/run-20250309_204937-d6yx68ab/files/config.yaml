@@ -1,0 +1,30 @@
+_wandb:
+    value:
+        cli_version: 0.19.8
+        m: []
+        python_version: 3.13.2
+        t:
+            "1":
+                - 1
+                - 49
+                - 55
+                - 105
+            "2":
+                - 1
+                - 49
+                - 55
+                - 105
+            "3":
+                - 16
+                - 23
+                - 55
+            "4": 3.13.2
+            "5": 0.19.8
+            "8":
+                - 5
+            "12": 0.19.8
+            "13": darwin-arm64
+evaluation_type:
+    value: strategy_comparison
+timestamp:
+    value: "20250309_204937"

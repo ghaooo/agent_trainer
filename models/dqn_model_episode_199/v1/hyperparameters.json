@@ -1,0 +1,11 @@
+{
+  "memory_size": 10000,
+  "batch_size": 64,
+  "gamma": 0.99,
+  "epsilon": 0.09982814973688857,
+  "epsilon_min": 0.1,
+  "epsilon_decay": 0.998,
+  "learning_rate": 0.001,
+  "state_size": 6,
+  "action_size": 210
+}
