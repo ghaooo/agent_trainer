@@ -7,8 +7,7 @@ seaborn>=0.11.0
 
 # Reinforcement learning dependencies
 torch>=1.10.0
-gym>=0.21.0
-gym[box2d]>=0.21.0
+gymnasium>=0.21.0
 
 # Visualization and UI
 gradio>=3.0.0
@@ -16,3 +15,6 @@ wandb>=0.12.0
 
 # Additional utilities
 scipy>=1.7.0
+requests>=2.25.0
+pydantic>=2.0.0
+PyYAML>=6.0.0
